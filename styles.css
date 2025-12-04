@@ -1,0 +1,510 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("Google fonts/Oswald-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald";
+  background-color: #f4f4f4;
+  color: #333;
+  background: url(IMAGES/wlc-bg1.jpg);
+  overflow-x: hidden;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  margin-left: 60%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s;
+  font-family: "Oswald";
+  font-size: 1.3rem;
+}
+
+.nav-links li a:hover {
+  color: #d7002e;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background: #d7002e;
+  color: #fff;
+  padding: 3px 7px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+/* about section begins */
+.flex {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 50px;
+  gap: 10px;
+}
+.flex p {
+  font-size: 5rem;
+  color: white;
+  font-family: "Oswald";
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 15%;
+}
+.flex img {
+  margin-right: 5%;
+  margin-top: 20px;
+}
+.flex .tagline {
+  color: white;
+  flex: 0 0 auto;
+  font-size: 1.5rem;
+  display: block;
+}
+.flexbox {
+  margin-left: 10%;
+}
+.flexbox button {
+  width: 220px;
+  padding: 15px 15px;
+  background-color: darkgreen;
+  border: none;
+  color: white;
+  font-family: "Oswald";
+  font-size: 1.2rem;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+/* 2nd section styles */
+.second-section {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+  height: 100vh;
+}
+.cv-sec {
+  width: 30%;
+  border-radius: 4px;
+  height: 500px;
+  margin-top: 40px;
+}
+.cv-sec img {
+  background: url(IMAGES/about1.png);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cv-text {
+  width: 40%;
+}
+.cv-text p {
+  font-family: "Oswald";
+  font-size: 3rem;
+  color: white;
+  margin-top: 30%;
+  margin-bottom: 20px;
+}
+.cv-text .tagline2 {
+  color: white;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+.cv-text button {
+  width: 220px;
+  padding: 12px 15px;
+  background-color: darkgreen;
+  border: none;
+  color: white;
+  font-family: "Oswald";
+  font-size: 1.2rem;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+/* EXPERIENCE ARTICLE BEGINS */
+.experience {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: auto;
+  gap: 25px;
+}
+.exp,
+.services .myexp {
+  color: lightgreen;
+  font-size: 1.5rem;
+}
+.exp p {
+  font-size: 2.8rem;
+  color: white;
+  text-transform: uppercase;
+}
+.exp2 {
+  width: 50%;
+  color: white;
+  font-size: 1.5rem;
+}
+.experience-card {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.card-holder {
+  background-color: #0a0a0a;
+  width: 270px;
+  height: 220px;
+  padding: 15px 10px;
+  margin-top: 35px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.card-holder p {
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.card-holder .Stack {
+  color: green;
+  font-size: 1.5rem;
+}
+.card-holder span {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+/* Progress bar */
+.progress-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+.progress-img {
+  position: relative;
+}
+.progress-img span {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  font-size: 2.5rem;
+}
+.progress-img p {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+.experience2 {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  height: 200px;
+  gap: 25px;
+  margin-top: 5%;
+  background: url(IMAGES/about-bg.png);
+}
+.services p {
+  font-size: 2.8rem;
+  color: white;
+  text-transform: uppercase;
+}
+.services2 {
+  width: 50%;
+  color: white;
+  font-size: 1.5rem;
+}
+/* Project cards */
+.project-container {
+  padding: 30px 20px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.project-card-holder {
+  background-color: #0a0a0a;
+  width: 350px;
+  height: 370px;
+  padding: 15px 20px;
+  margin-top: 35px;
+  border-radius: 5px;
+  margin-left: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+.project-card-holder img {
+  margin-top: 10px;
+}
+.project-card-holder p {
+  color: white;
+  font-size: 1.9rem;
+  color: lightgreen;
+  margin-bottom: 8%;
+  margin-top: 5px;
+}
+.project-card-holder span {
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.working-project {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.projects .work {
+  color: lightgreen;
+  font-size: 1.5rem;
+}
+.projects p {
+  font-size: 2.8rem;
+  color: white;
+  text-transform: uppercase;
+}
+.showcase {
+  color: white;
+  width: 50%;
+  font-size: 1.5rem;
+}
+/* RESUME CONTAINER */
+.resume-container {
+  padding: 30px 20px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resume-card-holder {
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+  text-align: center;
+}
+.testimonials-container {
+  background: url(IMAGES/testimonials-bg.png);
+  height: auto;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.testimonials {
+  margin-left: 10%;
+}
+.testimonials .users {
+  color: lightgreen;
+  font-size: 1.5rem;
+}
+.testimonials p {
+  font-size: 2.8rem;
+  color: white;
+  text-transform: uppercase;
+}
+.users-experience {
+  width: 50%;
+  color: white;
+  font-size: 1.5rem;
+}
+.user {
+  background: url(IMAGES/testimonials-bg.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 280px;
+}
+.comma {
+  color: green;
+  margin: auto;
+  font-size: 3rem;
+  margin-top: 20%;
+}
+.elements img {
+  border-radius: 50%;
+  margin-top: 20%;
+}
+.elements-txt {
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  width: 50%;
+}
+.elements-txt .individual {
+  font-size: 1.2rem;
+}
+/* PAYMENT METHODS */
+.payment-methods {
+  height: 200px;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+.payment {
+  margin-top: 20px;
+}
+.payment .spec {
+  color: lightgreen;
+  font-size: 1.5rem;
+}
+.payment p {
+  font-size: 2.8rem;
+  color: white;
+  text-transform: uppercase;
+}
+.paytxt {
+  width: 50%;
+  color: white;
+  font-size: 1.5rem;
+}
+.payment-container {
+  padding: 30px 20px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.payment-options {
+  background-color: #0a0a0a;
+  width: 330px;
+  height: 480px;
+  padding: 15px 20px;
+  margin-top: 35px;
+  border-radius: 5px;
+  margin-left: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+.payment-options img {
+  margin-top: 10px;
+}
+.payment-options p {
+  color: white;
+  font-size: 2.5rem;
+  color: lightgreen;
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.payment-options span {
+  color: grey;
+  text-align: center;
+  font-size: 1.2rem;
+  display: block;
+}
+.payment-options button {
+  width: 190px;
+  padding: 13px 15px;
+  background-color: darkgreen;
+  border: none;
+  color: white;
+  font-family: "Oswald";
+  font-size: 1.1rem;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+/* BLOGS */
+.Blogs {
+  height: 200px;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 7%;
+}
+.blog-posts .news {
+  color: lightgreen;
+  font-size: 1.5rem;
+}
+.blog-posts p {
+  font-size: 2.8rem;
+  color: white;
+  text-transform: uppercase;
+}
+.readme {
+  width: 50%;
+  color: white;
+  font-size: 1.5rem;
+}
+.blog-container {
+  border: 2px solid white;
+  padding: 30px 20px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+}
+.blog-cards {
+  background-color: white;
+  border: 2px solid;
+  width: 350px;
+  height: 450px;
+  /* padding: 15px 20px; */
+  margin-top: 35px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.blog-cards img {
+  width: 100%;
+}
+.blog-cards span {
+  display: block;
+  font-size: 1.2rem;
+   color: black;
+   margin-left: 5%;
+   margin-top: 5%;
+}
+.blog-cards p {
+  font-size: 1.5rem;
+  color: black;
+  text-transform: uppercase; 
+  margin-left: 5%;
+  font-weight: 500;
+}
+.fa-arrow-right {
+  margin-right: 5px;
+}
