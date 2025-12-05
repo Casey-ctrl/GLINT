@@ -48,7 +48,7 @@ body {
 }
 
 .nav-links li a:hover {
-  color: #d7002e;
+  color: lightgreen;
 }
 
 .nav-icons {
@@ -592,8 +592,10 @@ body {
   justify-content: space-evenly;
 }
   
-
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .main-nav {
     padding: 15px 20px;
   }
