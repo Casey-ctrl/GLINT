@@ -427,6 +427,9 @@ body {
 .payment-options img {
   margin-top: 10px;
 }
+.payment-options hr {
+  color: green;
+}
 .payment-options p {
   color: white;
   font-size: 2.5rem;
@@ -575,7 +578,7 @@ body {
     padding: 15px 20px;
   }
   .logo img {
-    margin-left: 0; /* prevent shifting */
+    margin-left: 0; 
     width: 120px;
   }
 
