@@ -570,7 +570,7 @@ body {
 }
   
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .main-nav {
     padding: 15px 20px;
   }
