@@ -590,11 +590,23 @@ body {
 .support {
   background: url(IMAGES/footer-bg.png);
   padding: 30px 20px;
-  height: 300px;
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 5%;
 }
+.footer {
+  /* border: 2px solid white; */
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background: url(IMAGES/footer-bg.png);
+}
+.footer p {
+  font-size: 1.5rem;
+  color: white;
   
+}
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
@@ -840,6 +852,10 @@ body {
     height: auto;
     gap: 25px;
     justify-content: center;
+    align-items: center;
+  }
+  .footer {
+    flex-direction: column;
     align-items: center;
   }
   .hamburger {
