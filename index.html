@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glint</title>
-  <link rel="stylesheet" href="styles.css">
+  <link  rel="stylesheet" href="styles.css">
   <link rel="icon" href="images-png/web-analysis_7248972.png">
   <link
   rel="stylesheet"
@@ -47,7 +47,7 @@
 
 <!-- ABOUT SECTION -->
  <section class="about">
-  <div class="flex" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="300">
+  <div class="flex reveal" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="300">
     <div class="flexbox" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
       <p><span style="color: darkgreen;">Imagination</span> is more important than knowledge</p>
       <span class="tagline">Together we the people achieve more than any single person<br/> could ever do  alone</span>
@@ -58,7 +58,7 @@
 </section>
 
  <!-- SECOND SECTION -->
- <section class="second-section" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+ <section class="second-section reveal" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
    <div class="cv-sec">
      <img src="IMAGES/about1.png" alt="">
     </div>
@@ -141,7 +141,7 @@
       </div>
      </article>
      <!-- PROJECT CARDS -->
-    <section class="project-container">
+    <section class="project-container reveal">
         <div class="project-card-holder" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="0">
           <img src="images-png/service1.svg" alt="">
           <p>Design Principles</p>
@@ -324,7 +324,23 @@
               <p>Contact me</p>
             </div>
 </body>
-<script src="app.js"></script>
+<script src="app.js" defer></script>
+<script>
+  const reveals = document.querySelectorAll(".reveal");
+
+  function showOnScroll() {
+    reveals.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+      if (top < window.innerHeight - 120) {
+        el.classList.add("show");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", showOnScroll);
+  showOnScroll();
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
