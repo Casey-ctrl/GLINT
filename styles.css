@@ -717,6 +717,7 @@ img {
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
+    padding-top: 50px;
   }
   .main-nav {
     padding: 15px 20px;
