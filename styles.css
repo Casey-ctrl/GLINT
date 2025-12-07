@@ -717,7 +717,6 @@ img {
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
-    padding-top: 50px;
   }
   .main-nav {
     padding: 15px 20px;
@@ -725,6 +724,7 @@ img {
   .logo img {
     margin-left: 0; 
     width: 120px;
+    height: auto;
   }
 
 
@@ -734,7 +734,7 @@ img {
   top: 60px;
   right: -100%;
   height: 90vh;
-  width: 100%;
+  width: 350px;
   background-color: black;
   padding-top: 80px;
   transition: 0.3s ease;
@@ -968,6 +968,7 @@ img {
   }
   .hamburger {
     display: flex;
+    margin-right: 10px;
   }
   .close-btn {
     display: block;
@@ -975,6 +976,5 @@ img {
     font-size: 1.6rem;
     cursor: pointer;
   }
+
 }
-
-
